@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="8dp">
+
+    <RelativeLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/story_ring_background" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile_image"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="User profile image"
+            android:src="@drawable/giyuu_1"
+            app:shapeAppearanceOverlay="@style/CircularImage" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/story_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/sample_username_1"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+</LinearLayout>

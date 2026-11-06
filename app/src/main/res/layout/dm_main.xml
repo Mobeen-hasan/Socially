@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DmActivity">
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/camera"
+            app:tint="@color/maroon_primary" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camera"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_bar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/back_arrow"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="0.15"
+                    android:src="@drawable/back1"
+                    app:tint="@color/maroon_primary" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Jacob_w"
+                    android:textColor="@color/maroon_primary"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="0.15"
+                    android:src="@drawable/plus"
+                    app:tint="@color/maroon_primary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/search_bar_background"
+                android:paddingVertical="12dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/search"
+                    android:contentDescription="Search icon"
+                    app:tint="@color/text_secondary"
+                    android:layout_marginStart="16dp" />
+
+                <EditText
+                    android:id="@+id/search_edit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:hint="Search"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginTop="15dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/hash1"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:scaleType="centerCrop"
+                    android:padding="0.5dp"
+                    android:contentDescription="dm1_picture"
+                    android:src="@drawable/rengoku_2"
+                    app:shapeAppearanceOverlay="@style/CircularImage"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/hash1"
+                    android:layout_toStartOf="@+id/camera_icon"
+                    android:layout_marginStart="15dp"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="joshua_I"
+                        android:textStyle="bold"
+                        android:textSize="16dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Have a nice day bro!"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:text=".now"
+                            android:textSize="16dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/camera_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/camera"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    app:tint="@color/maroon_primary" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginTop="15dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/dm2"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:scaleType="centerCrop"
+                    android:padding="0.5dp"
+                    android:contentDescription="dm1_picture"
+                    android:src="@drawable/sabito2"
+                    app:shapeAppearanceOverlay="@style/CircularImage"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/dm2"
+                    android:layout_toStartOf="@+id/camera_icon2"
+                    android:layout_marginStart="15dp"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="karnnne"
+                        android:textStyle="bold"
+                        android:textSize="16dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="I heard this is a good movie, s.."
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:text=".now"
+                            android:textSize="16dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/camera_icon2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/camera"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    app:tint="@color/maroon_primary" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginTop="15dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/dm3"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:scaleType="centerCrop"
+                    android:padding="0.5dp"
+                    android:contentDescription="dm3_picture"
+                    android:src="@drawable/kanao"
+                    app:shapeAppearanceOverlay="@style/CircularImage"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/dm3"
+                    android:layout_toStartOf="@+id/camera_icon3"
+                    android:layout_marginStart="15dp"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="martini_rond"
+                        android:textStyle="bold"
+                        android:textSize="16dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="See you in the next meeting!"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:text=".15m"
+                            android:textSize="16dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/camera_icon3"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/camera"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    app:tint="@color/maroon_primary" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginTop="15dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/dm4"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:scaleType="centerCrop"
+                    android:padding="0.5dp"
+                    android:contentDescription="dm4_picture"
+                    android:src="@drawable/tengen"
+                    app:shapeAppearanceOverlay="@style/CircularImage"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/dm4"
+                    android:layout_toStartOf="@+id/camera_icon4"
+                    android:layout_marginStart="15dp"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="andrewwww_"
+                        android:textStyle="bold"
+                        android:textSize="16dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sounds good 😂😂😂"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:text=".20m"
+                            android:textSize="16dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/camera_icon4"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/camera"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    app:tint="@color/maroon_primary" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginTop="15dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/dm5"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:scaleType="centerCrop"
+                    android:padding="0.5dp"
+                    android:contentDescription="dm5_picture"
+                    android:src="@drawable/obanai"
+                    app:shapeAppearanceOverlay="@style/CircularImage"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/dm5"
+                    android:layout_toStartOf="@+id/camera_icon5"
+                    android:layout_marginStart="15dp"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="kiero_d"
+                        android:textStyle="bold"
+                        android:textSize="16dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="The new design looks cool, but.."
+                            android:textStyle="bold"
+                            android:textSize="15dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:text=".1m"
+                            android:textSize="16dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/camera_icon5"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/camera"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    app:tint="@color/maroon_primary" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginTop="15dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/dm6"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:scaleType="centerCrop"
+                    android:padding="0.5dp"
+                    android:contentDescription="dm6_picture"
+                    android:src="@drawable/shinbou"
+                    app:shapeAppearanceOverlay="@style/CircularImage"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/dm6"
+                    android:layout_toStartOf="@+id/camera_icon6"
+                    android:layout_marginStart="15dp"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="maxjacobson"
+                        android:textStyle="bold"
+                        android:textSize="16dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/open_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thank you, bro!"
+                            android:textStyle="bold"
+                            android:textSize="15dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:text=".2h"
+                            android:textSize="16dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/camera_icon6"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/camera"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    app:tint="@color/maroon_primary" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

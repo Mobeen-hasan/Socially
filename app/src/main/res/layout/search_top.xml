@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".SearchTopActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/search_bar_background"
+            android:paddingVertical="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/search"
+                android:contentDescription="Search icon"
+                app:tint="@color/text_secondary"
+                android:layout_marginStart="16dp" />
+
+            <EditText
+                android:id="@+id/search_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:hint="internshala"
+                android:inputType="text"
+                android:singleLine="true"
+                android:background="@android:color/transparent" />
+
+            <ImageView
+                android:id="@+id/clear_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/cross_1"
+                android:contentDescription="Clear text"
+                app:tint="@color/text_secondary"
+                android:layout_marginEnd="8dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/clear_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:textColor="@color/maroon_primary"
+            android:textStyle="normal"
+            android:textSize="18dp"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top"
+                android:textColor="@android:color/black"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="@android:color/black"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:gravity="center"
+
+            android:textSize="18dp"
+            android:textColor="@color/gray_3"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:text="Accounts"/>
+
+        <TextView
+            android:textSize="18dp"
+            android:textColor="@color/gray_3"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="0.9"
+            android:layout_height="wrap_content"
+            android:text="Tags"/>
+
+        <TextView
+            android:textSize="18dp"
+            android:textColor="@color/gray_3"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="wrap_content"
+            android:text="Places"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/hash1"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:scaleType="centerCrop"
+                android:padding="0.5dp"
+                android:contentDescription="Hash1 picture"
+                android:src="@drawable/rengoku_2"
+                app:shapeAppearanceOverlay="@style/CircularImage" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="intershala"
+                    android:textStyle="bold"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="intershala"
+                    android:textColor="@color/gray_3"
+                    android:textSize="16dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/hash2"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:scaleType="centerCrop"
+                android:padding="0.5dp"
+                android:contentDescription="Hashtag 2 picture"
+                android:src="@drawable/black_hashtag"
+                app:shapeAppearanceOverlay="@style/CircularImage"
+                app:strokeColor="@android:color/black"
+                app:strokeWidth="1dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#intershala"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1000+ posts"
+                    android:textColor="@color/gray_3"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/hash3"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:scaleType="centerCrop"
+                android:padding="0.5dp"
+                android:contentDescription="Hashtag 3 picture"
+                android:src="@drawable/black_hashtag"
+                app:shapeAppearanceOverlay="@style/CircularImage"
+                app:strokeColor="@android:color/black"
+
+                app:strokeWidth="1dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#intershala_no_more_theory_challange"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500+ posts"
+                    android:textColor="@color/gray_3"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/hash4"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:scaleType="centerCrop"
+                android:padding="0.5dp"
+                android:contentDescription="Hashtag 4 picture"
+                android:src="@drawable/black_hashtag"
+                app:shapeAppearanceOverlay="@style/CircularImage"
+                app:strokeColor="@android:color/black"
+                app:strokeWidth="1dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Intershala"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Internshala, B-610, Untech Business Zone,.."
+                    android:textColor="@color/gray_3"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/hash5"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:scaleType="centerCrop"
+                android:padding="0.5dp"
+                android:contentDescription="Hashtag 5 picture"
+                android:src="@drawable/black_hashtag"
+                app:shapeAppearanceOverlay="@style/CircularImage"
+                app:strokeColor="@android:color/black"
+                app:strokeWidth="1dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="internshalastudentpartner"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500+ posts"
+                    android:textColor="@color/gray_3"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/hash6"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:scaleType="centerCrop"
+                android:padding="0.5dp"
+                android:contentDescription="Hashtag 6 picture"
+                android:src="@drawable/black_hashtag"
+                app:shapeAppearanceOverlay="@style/CircularImage"
+                app:strokeColor="@android:color/black"
+                app:strokeWidth="1dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="internshalaincampus"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100+ posts"
+                    android:textColor="@color/gray_3"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

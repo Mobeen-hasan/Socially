@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Socially</string>
+    <string name="username">Giyuu</string>
+    <string name="login">Log in</string>
+    <string name="switch_accounts">Switch accounts</string>
+    <string name="signup">Sign up.</string>
+
+    <string name="create_account_subtitle">Create An Account and Sign Up</string>
+    <string name="label_username">Username</string>
+    <string name="hint_username">tejpatil064</string>
+    <string name="label_your_name">Your Name</string>
+    <string name="hint_your_name">Tejas</string>
+    <string name="label_last_name">Your Last name</string>
+    <string name="hint_last_name">Patil</string>
+    <string name="label_dob">Date of Birth</string>
+    <string name="hint_dob">02 - 09 - 2003</string>
+    <string name="label_email">E-mail</string>
+    <string name="hint_email">Enter E-mail</string>
+    <string name="label_password">Password</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="camera_icon_desc">Upload profile picture</string>
+    <string name="back_arrow_desc">Go back</string>
+
+    <string name="hint_login_username">asad_khasanov</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="or_separator">OR</string>
+    <string name="no_account">Don\'t have an account?</string>
+
+    <string name="your_story">Your Story</string>
+    <string name="sample_username_1">karennne</string>
+    <string name="sample_username_2">zackjohn</string>
+    <string name="post_user_name">joshua_l</string>
+    <string name="post_location">Tokyo, Japan</string>
+    <string name="liked_by">Liked by</string>
+    <string name="sample_liker">craig_love</string>
+    <string name="and">and</string>
+    <string name="others">others</string>
+    <string name="sample_caption">The game in Japan was amazing and I want to share some photos</string>
+
+    <string name="search">Search</string>
+
+    <string name="following1">karenme liked 3 posts. 3h</string>
+    <string name="following2">kiero_d, zackjohn  and craig_love liked joshua_l photo. 3h</string>
+    <string name="following3">kiero_d started following craig_love. 3h</string>
+    <string name="following4">craig_love liked 8 posts. 3h</string>
+    <string name="following5">maxjacobson and zackjohn liked mils_potter\'s post. 3h</string>
+    <string name="following6">maxjacobson and craig_love liked martini_rond\'s post. 3h</string>
+    <string name="following7">karenme liked martini_rond\'s comment: @martini_rond Nice! 3h</string>
+    <string name="following8">maxjacobson liked 3 posts. 3h</string>
+
+</resources>

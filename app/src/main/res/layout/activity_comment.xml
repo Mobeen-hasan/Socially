@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/left_arrow"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/post_image_comment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/post_caption_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/post_image_comment"
+        android:layout_marginTop="8dp"
+        android:text="Caption" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/comments_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/post_caption_comment"
+        android:layout_above="@+id/comment_input_layout" />
+
+    <LinearLayout
+        android:id="@+id/comment_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/comment_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Add a comment..." />
+
+        <Button
+            android:id="@+id/send_comment_button"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/end_call_button"
+            android:textColor="@color/white"
+            android:backgroundTint="#9a5a5b"
+            android:text="Send" />
+    </LinearLayout>
+
+</RelativeLayout>
